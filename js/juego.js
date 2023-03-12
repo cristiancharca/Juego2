@@ -74,7 +74,7 @@ const dadosJ =()=>{
     return randomValue;
 }
 const castigo =(data)=>{
-    if (data == "") return data;
+    if (data >10) return data;
     if (data == 1) return data +2;
     if (data == 2) return data +1;
     if (data == 3) return data +2;
@@ -158,59 +158,3 @@ const eliminarMarcadores=() =>{
     }
     FICHA = [];
 }
-/*
-const fieldTypeEmojis = {
-    Station: field => "🚂",
-    Police: field => "🚔🚨",
-    Jail: field => "🔒👮",
-    Action: field => ({
-      chance: " ?",
-      chest: "📦"
-    })[field.kind],
-    Start: field => "🚩",
-    Tax: field => "💰",
-    Company: field => ({
-      electricity: "💡",
-      water: "🚰"
-    })[field.kind],
-    Empty: field => "🚘"
-  };
-  */
-
-  //const cube = document.querySelector('.cube');
- // const time = 2;
-  
-  cube.addEventListener('click', () => {
-      cube.style.transition = '';
-      cube.style.transform = `translateY(400px) rotateX(0deg) rotateY(0deg) rotateZ(0deg)`;
-      const randomValue = Math.floor((Math.random() * 6) + 1);
-      setTimeout(() => {
-          cube.style.transition = `transform ${time}s`;
-         // const randomValue = Math.floor((Math.random() * 6) + 1);
-          console.log(`randomValue: ${randomValue}` );
-          
-          switch(randomValue) {
-              case 1:             
-                  cube.style.transform = `translateY(400px) rotateX(3600deg) rotateY(3600deg) rotateZ(3600deg)`;
-                //  console.log(`randomValue: ${randomValue}` );
-                  break;
-              case 2:
-                  cube.style.transform = `translateY(400px) rotateX(4410deg) rotateY(3600deg) rotateZ(3600deg)`;
-                  break;
-              case 3:
-                  cube.style.transform = `translateY(400px) rotateX(3600deg) rotateY(4410deg) rotateZ(3600deg)`;
-                  break;
-              case 4:
-                  cube.style.transform = `translateY(400px) rotateX(3600deg) rotateY(2430deg) rotateZ(3600deg)`;
-                  break;
-              case 5:
-                  cube.style.transform = `translateY(400px) rotateX(2430deg) rotateY(3600deg) rotateZ(3600deg)`;
-                  break;
-              case 6:
-                  cube.style.transform = `translateY(400px) rotateX(3600deg) rotateY(1980deg) rotateZ(3600deg)`;
-                  break;
-                  
-          };//console.log(`randomValue: ${randomValue}` );
-      }, time * 10);
-      
-  });
