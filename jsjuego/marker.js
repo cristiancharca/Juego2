@@ -9,10 +9,9 @@ function Markers( id, usuario,dado, posicionU) {
 
     this.crear = () => {
        
-        const para = document.createElement("small");
+        const para = document.createElement("i");
         para.setAttribute("id", this.id);
-        para.setAttribute("class", "badge bg-warning m-1 rounded-pill");
-        para.innerHTML = this.usuario;
+        para.setAttribute("class", `fa fa-user ${this.usuario}`);
         this.tarjeta= document.getElementById(this.posicionU).appendChild(para);
     
     }
@@ -22,7 +21,7 @@ function Markers( id, usuario,dado, posicionU) {
     }
  
     this.getId = () => {
-        console.log('dentroi deget'+this.id);
+       // console.log('dentroi deget'+this.id);
         return this.id;
     }
     this.update = (dado, posicionU) =>{

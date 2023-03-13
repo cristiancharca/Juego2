@@ -1,0 +1,75 @@
+
+@mixin etiqueta{
+  margin-top: 0;
+	margin-bottom: 0.1rem;
+	font-family: "Oswald",sans-serif;
+	font-weight: 500;
+	line-height: 1.2;
+	color: #fff;
+}
+
+@mixin fondo($mimagen){
+  background-size: cover;
+	overflow: hidden;
+	position: relative;
+	z-index: 99;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+	background-image: linear-gradient(to right, rgba(4, 8, 15, 0.952), rgba(1, 2, 5, 0.87)), url($mimagen);
+}
+
+@mixin contene{
+	overflow: hidden;
+	width: 100%;
+	max-width: 1140px;
+  padding-right: 3rem, 0.75rem;
+  padding-left: 3rem, 0.75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+@mixin movil0{
+	@media (min-width: 476px) {
+		@content;
+	}
+}
+@mixin movil{
+	@media (min-width: 576px) {
+		@content;
+	}
+}
+
+@mixin tablet{
+	@media (min-width: 768px) {
+		@content;
+	}
+}
+@mixin destok{
+	@media (min-width: 992px) {
+		@content;
+	}
+}
+
+@mixin mayor{
+	@media (min-width: 1200px) {
+		@content;
+	}
+}
+@mixin cine{
+	@media (min-width: 1400px) {
+		@content;
+	}
+}
+@mixin nak{
+	@media screen and (max-width: 991.98px){
+		@content;
+	}
+}
+@mixin naksm{
+	@media screen and (min-width: 992px){
+		@content;
+	}
+}

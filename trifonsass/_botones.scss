@@ -1,0 +1,58 @@
+
+.bg-secondary {
+	background-color: #191C24 !important;
+}
+.text-primary {
+	color: #EB1616 !important;
+}
+.back-to-top {
+	position: fixed;
+	display: none;
+	right: 45px;
+	bottom: 45px;
+	z-index: 99;
+}
+.btn {
+	font-weight: 500;
+	transition: .5s;
+}
+.btn-square {
+	width: 38px;
+	height: 38px;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: normal;
+}
+.btn-sm-square {
+	width: 32px;
+	height: 32px;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: normal;
+}
+.btn-lg-square {
+	width: 48px;
+	height: 48px;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: normal;
+}
+.page-header {
+	background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url(../img/carousel-1.jpg) center center no-repeat;
+	background-size: cover;
+}
+.breadcrumb-item {
+	+ {
+		.breadcrumb-item {
+			&::before {
+				color: var(--light);
+			}
+		}
+	}
+}

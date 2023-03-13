@@ -1,0 +1,129 @@
+@use 'mixin';
+
+
+
+
+.section {
+	padding: 40px 0;
+
+	.contenedor {
+		@include mixin.contene;
+
+		.tituloCa {
+			margin: auto;
+			text-align: center;
+
+			h1 {
+				font-size: 35px;
+				text-align: center;
+				color: #EB1616;
+				text-transform: uppercase;
+			}
+		}
+
+		.contenidos {
+			display: flex;
+			flex-wrap: wrap;
+			margin: auto;
+			overflow: hidden;
+			max-width: 100%;
+			vertical-align: top;
+
+			.cajas {
+				text-align: center;
+				margin: auto;
+				flex-shrink: 0;
+				width: 100%;
+				max-width: 100%;
+				vertical-align: top;
+				justify-content: center;
+
+				.parrafo {
+					font-size: 14px;
+					letter-spacing: 1px;
+					text-align: justify;
+				}
+
+				.titulo {
+					margin: auto;
+					text-align: center;
+
+					.huno {
+						font-size: 35px;
+						text-align: center;
+						color: #EB1616;
+						text-transform: uppercase;
+					}
+				}
+
+			}
+		}
+	}
+}
+
+
+
+
+.ba {
+	@include mixin.fondo('../img/P.jpg');
+
+}
+
+.micar {
+
+	@include mixin.fondo('../img/1.jpg');
+
+}
+
+@include mixin.movil0 {
+	.section {
+		.contenedor {
+			max-width: 90%;
+			.contenidos {
+				margin: auto;
+				overflow: hidden;
+				max-width: 100%;
+			}
+		}
+	}
+}
+ 
+@include mixin.movil {
+	.section {
+		.contenedor {
+			max-width: 85%;
+			.contenidos {
+				margin: auto;
+				overflow: hidden;
+				max-width: 100%;
+			}
+		}
+	}
+}
+
+@include mixin.tablet {
+	.section {
+		.contenedor {
+			max-width: 90%;
+
+			.contenidos {
+				margin: auto;
+				overflow: hidden;
+				max-width: 100%;
+			}
+
+		}
+	}
+}
+
+@include mixin.destok {
+	.section {
+		.contenedor {
+			.contenidos {
+				margin: auto;
+				overflow: hidden;
+				max-width: 100%;
+			}
+		}
+	}
+}

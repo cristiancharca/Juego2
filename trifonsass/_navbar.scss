@@ -1,0 +1,98 @@
+@use 'modifi'; 
+@use 'mixin';
+
+
+.navbar {
+	.dropdown-toggle {
+		&::after {
+			border: none;
+			content: "\f107";
+			font-family: "Font Awesome 5 Free";
+			font-weight: 900;
+			vertical-align: middle;
+			margin-left: 8px;
+		}
+	}
+	.navbar-nav {
+		.nav-link {
+			margin-right: 30px;
+			padding: 20px 0;
+			color: modifi.$light;
+			font-family: 'Oswald', sans-serif;
+			font-size: 15px;
+			font-weight: 300;
+			justify-content: space-between;
+			text-transform: uppercase;
+			outline: none;
+		
+			&:hover {
+				color:  modifi.$primary;
+			}
+		}
+		.nav-link.active {
+			color: modifi.$primary;
+		}
+	}
+}
+.navbar.sticky-top {
+	top: -100px;
+	transition: .5s;
+}
+
+@include mixin.nak{
+	.navbar {
+		.navbar-nav {
+			.nav-link {
+				margin-right: 0;
+				padding: 10px 0;
+			}
+			margin-top: 8px;
+			border-top: 1px solid modifi.$light;
+		}
+	}
+	.navbar.shadow-sm {
+		.navbar-nav {
+			.nav-link {
+				margin-right: 0;
+				padding: 10px 0;
+			}
+		}
+	}
+}
+@include mixin.naksm{
+	.navbar.shadow-sm {
+		.navbar-nav {
+			.nav-link {
+				padding: 20px 0;
+			}
+		}
+	}
+	.navbar {
+		.nav-item {
+			.dropdown-menu {
+				display: block;
+				border: none;
+				margin-top: 0;
+				top: 150%;
+				opacity: 0;
+				visibility: hidden;
+				transition: .5s;
+			}
+			&:hover {
+				.dropdown-menu {
+					top: 100%;
+					visibility: visible;
+					transition: .5s;
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+.back-to-top {
+	position: fixed;
+	display: none;
+	right: 45px;
+	bottom: 45px;
+	z-index: 99;
+}

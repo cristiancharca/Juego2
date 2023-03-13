@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SysteDiez</title>
+
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/owl.theme.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="trifoncss/style.css">
+ 
+</head>
+
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg  wow fadeIn shadow-sm" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn; top: 0px;">
+    <div class="container">
+      <a class="navbar-brand text-primary" href="index.html"> <img src="img/ss.png" alt="" width="34" 
+          class="d-inline-block ">
+        SystemDiez</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link "  href="index.html"><i class="fa fa-home"></i>       Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="quinessomos.html"><i class="fa fa-users"></i>       Quines Somos</a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-users"></i>       Juego</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ 
+  <div class="container">
+    <div class="row g-1">
+      <div class="col-3">
+        <div class="containers">
+          <div class="cube">
+            <div class="cube-face front">
+              <div class="inside">
+                <span class="dot"></span>
+              </div>
+            </div>
+            <div class="cube-face back">
+              <div class="inside">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+            <div class="cube-face left">
+              <div class="inside">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+            <div class="cube-face right">
+              <div class="inside">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+            <div class="cube-face top">
+              <div class="inside">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+            <div class="cube-face bottom">
+              <div class="inside">
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="container" style="top: 500px;">
+          <br><br><br><br><br><br><br><br><br>
+          <button class="bg-secondary text-primary py-1 px-4" onclick="agr();">Agregar Usuario</button>
+          <button class="bg-secondary text-primary py-1 px-4" onclick="rollDice();">Tira el Dado GO</button>
+        </div>
+        
+      </div>
+      <div class="col-9">
+         <div class="containerw">
+          <div class="card">
+            <div class="box">
+              <div class="content" id="0">
+                <h2>GO</h2>
+              </div>
+            </div>
+          </div>
+
+    <div class="card">
+      <div class="box">
+        <div class="content" id="1">
+          <h2>01</h2>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="box">
+        <div class="content" id="2">
+          <h2>02</h2>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="box">
+        <div class="content" id="3">
+          <h2>03</h2>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="box">
+        <div class="content" id="4">
+          <h2>04</h2>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="box">
+        <div class="content" id="5">
+          <h2>05</h2>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="box">
+        <div class="content" id="6">
+          <h2>06</h2>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="box">
+        <div class="content" id="7">
+          <h2>07</h2>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="box">
+        <div class="content" id="8">
+          <h2>08</h2>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="box">
+        <div class="content" id="9">
+          <h2>09</h2>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="box">
+        <div class="content" id="10">
+          <h2>10</h2>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="box">
+        <div class="content" id="11">
+          <h2>11</h2>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="box">
+        <div class="content" id="12">
+          <h2>12</h2>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="box">
+        <div class="content" id="13">
+          <h2>13</h2>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="box">
+        <div class="content" id="14">
+          <h2>14</h2>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="box">
+        <div class="content" id="15">
+          <h2>15</h2>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="box">
+        <div class="content" id="16">
+          <h2>16</h2>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="box">
+        <div class="content" id="17">
+          <h2>17</h2>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="box">
+        <div class="content" id="18">
+          <h2>18</h2>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="box">
+        <div class="content" id="19">
+          <h2>19</h2>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="box">
+        <div class="content" id="20">
+          <h2>20</h2>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="box">
+        <div class="content" id="21">
+          <h2>21</h2>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="box">
+        <div class="content" id="22">
+          <h2>22</h2>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="box">
+        <div class="content" id="23">
+          <h2>23</h2>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="box">
+        <div class="content" id="24">
+          <h2>24</h2>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="box">
+        <div class="content" id="25">
+          <h2>25</h2>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="box">
+        <div class="content" id="26">
+          <h2>26</h2>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="box">
+        <div class="content" id="27">
+          <h2>27</h2>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="box">
+        <div class="content" id="28">
+          <h2>28</h2>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="box">
+        <div class="content" id="29">
+          <h2>29</h2>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="box">
+        <div class="content" id="30">
+          <h2>30</h2>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="box">
+        <div class="content" id="31">
+          <h2>31</h2>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="box">
+        <div class="content" id="32">
+          <h2>32</h2>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="box">
+        <div class="content" id="33">
+          <h2>33</h2>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="box">
+        <div class="content" id="34">
+          <h2>34</h2>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="box">
+        <div class="content" id="35">
+          <h2>35</h2>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="box">
+        <div class="content" id="36">
+          <h2>36</h2>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="box">
+        <div class="content" id="37">
+          <h2>37</h2>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="box">
+        <div class="content" id="38">
+          <h2>38</h2>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="box">
+        <div class="content" id="39">
+          <h2>39</h2>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="box">
+        <div class="content" id="40">
+          <h2>40</h2>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="box">
+        <div class="content" id="41">
+          <h2>41</h2>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="box">
+        <div class="content" id="42">
+          <h2>42</h2>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="box">
+        <div class="content" id="43">
+          <h2>43</h2>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="box">
+        <div class="content" id="44">
+          <h2>44</h2>
+        </div>
+      </div>
+    </div>
+   
+
+
+    
+  </div>
+      </div>
+    </div>
+  </div>
+ 
+
+ 
+  <script src="js/jquery-min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/smooth-scroll.js"></script>
+  <script src="js/smooth-on-scroll.js"></script>
+  <script async src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+    integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+    crossorigin="anonymous"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/scrip.js"></script>
+  <script src="jsjuego/marker.js"></script>
+  <script src="jsjuego/juego.js"></script>
+</body>
+
+</html>
