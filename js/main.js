@@ -17,9 +17,13 @@ function login(){
    username =document.getElementById("username").value;
    password = document.getElementById("password").value;
 
-   if (username =="trifon" && password == "1234"){
-      alert("iniciaste sesion!!!")
+   if (username =="juego" && password =="1234"){
       window.location = "index.html";
+      alert("iniciaste sesion!!!")
+      //Location.href="index.html";
+     // window.location = 'index.html';
+     // Window.location="index.html";
+      //window.location ="index.html";
    } else{
       alert("datos incorrectos")
    }
