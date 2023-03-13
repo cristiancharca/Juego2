@@ -1,6 +1,6 @@
 
 
-let ids = 6895,contador = 0;
+let ids = 6895,contador = 0, i=0;
 const cube = document.querySelector('.cube');
 const time = 2;
    // let nu = 0;
@@ -91,8 +91,9 @@ const castigo =(data)=>{
 function agr(){
    
     ids =ids+1;
+    i=i+1;
     data = {}
-    data = { id: ids, usuario: 'barreto', dado: 0, posicionU: 0 }//,{ id: 6511, socket_id: 'mari', sock: 0, so: 0}
+    data = { id: ids, usuario: 'barreto'+i, dado: 0, posicionU: 0 }//,{ id: 6511, socket_id: 'mari', sock: 0, so: 0}
     console.log(data);
     ganador(data)
 }
